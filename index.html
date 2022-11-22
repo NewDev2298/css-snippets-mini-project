@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
@@ -17,43 +19,75 @@
         <section class="row">
             <h2>Flexbox Row</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
+                <p>Use these three properties to create a Flexbox row layout.</p>
+                    <ul>.row {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                        }
+                    </ul>
             </article>
         </section>
         <section class="column">
             <h2>Flexbox Column</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
+                <p>Use this to create a Flexbox column layout.</p>
+                    <ul>.column {
+                            display: flex;
+                            flex-direction: column;
+                       }
+                    </ul>
             </article>
         </section>
         <section class="css">
             <h2>CSS Grid Layout</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
+                <p>Build a 12-column layout using CSS Grid</p>
+                    <ul>.grid {
+                            display: grid;
+                            width: 100%;
+                            grid-template-columns;
+                        repeat(12, 1fr);
+                       }
+                    </ul>
             </article>
         </section>
         <section class="linear">
             <h2>Linear Gradients</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
+                <p>This will create a background linear gradient from top to bottom.</p>
                     <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
             </article>
         </section>
         <section class="glow">
             <h2>Box Transition Glow</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
+                <p>Use transition and box shadows to glow on hover.</p>
+                    <ul>.code-card .card-header {
+                            border-radius: 8px;
+                            transition: all 0.5s ease-in-out;
+                        }
+                        .code-card:hover_ 
+                        .code-card:hover .card-header {
+                            box-shadow: inset 0px 0px 8px 
+                        rgba(232,102,236,1) 0 0 15px
+                        rgba(232,102,236,1);
+                        }
+                            border-radius: 8px;
+                            transition: all 0.5s ease-in-out;
+                        }
+                    </ul>
             </article>
         </section>
         <section class="overlay">
             <h2>Overlay Card with Title</h2>
             <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis sapiente odio aliquam modi deleniti eaque nihil, tempora a consequatur distinctio tempore, voluptatum iusto nulla natus totam, iure earum voluptates officiis.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
+                <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+                    <ul>.card-header {
+                            position: relative;
+                            margin-top: -20px;
+                        }
+                    </ul>
             </article>
         </section>
     </main>
