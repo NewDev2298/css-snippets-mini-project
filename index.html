@@ -9,16 +9,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="head">
         <h1>CSS Snippet Cheatsheet</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quibusdam hic quas a! Sapiente laudantium, sit ab ducimus ipsa in, voluptatem, recusandae beatae qui nulla eveniet itaque atque sunt magnam!</p>
     </header>
-    <nav>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae quibusdam hic quas a! Sapiente laudantium, sit ab ducimus ipsa in, voluptatem, recusandae beatae qui nulla eveniet itaque atque sunt magnam!</p>
-    </nav>
     <main>
-        <section class="row">
+        <article class="row">
             <h2>Flexbox Row</h2>
-            <article>
                 <p>Use these three properties to create a Flexbox row layout.</p>
                     <ul>.row {
                             display: flex;
@@ -26,22 +23,18 @@
                             flex-wrap: wrap;
                         }
                     </ul>
-            </article>
-        </section>
-        <section class="column">
+        </article>
+        <article class="column">
             <h2>Flexbox Column</h2>
-            <article>
                 <p>Use this to create a Flexbox column layout.</p>
                     <ul>.column {
                             display: flex;
                             flex-direction: column;
                        }
                     </ul>
-            </article>
-        </section>
-        <section class="css">
+        </article>            
+        <article class="css">
             <h2>CSS Grid Layout</h2>
-            <article>
                 <p>Build a 12-column layout using CSS Grid</p>
                     <ul>.grid {
                             display: grid;
@@ -50,15 +43,19 @@
                         repeat(12, 1fr);
                        }
                     </ul>
-            </article>
-        </section>
-        <section class="linear">
+        </article>
+        <article class="linear">
             <h2>Linear Gradients</h2>
             <article>
                 <p>This will create a background linear gradient from top to bottom.</p>
-                    <ul>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus vero provident quidem totam quis voluptate quisquam odit ipsam libero beatae tempora delectus velit rerum earum, dolore sequi ab doloremque numquam.</ul>
-            </article>
-        </section>
+                    <ul>.linear-gradient-background {
+                        background-image: linear-gradient (
+                            rgba(232,102,236,0.3) 0%,
+                            rgba(232,102,236,0.6) 100%
+                        ):
+                        }
+                    </ul>
+        </article>
         <section class="glow">
             <h2>Box Transition Glow</h2>
             <article>
